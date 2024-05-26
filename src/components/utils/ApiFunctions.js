@@ -1,7 +1,15 @@
 import axios from 'axios'
 
 export const api = axios.create({
-    baseURL: "http://localhost:8080"
+    baseURL: "https://665328c5813d78e6d6d765df.mockapi.io"
+})
+
+export const apiTicketPrice = axios.create({
+    baseURL: "https://66533221813d78e6d6d7860b.mockapi.io"
+})
+
+export const apiTicketPriceAll = axios.create({
+    baseURL: "https://66533438813d78e6d6d78c1b.mockapi.io"
 })
 
 export const getHearder = () => {
@@ -40,7 +48,7 @@ export async function getRoomType() {
 /** This function get all rooms*/
 export async function getAllRooms() {
     try {
-        const res = await api.get("/api/rooms/allRooms")
+        const res = await apiTicketPriceAll.get("/api/rooms/allRooms")
         return res.data
     } catch (error) {
         throw new Error("Error fetching rooms")
@@ -64,14 +72,14 @@ export async function updateRoom(roomId, roomData) {
     formData.append("roomPrice", roomData.roomPrice)
     formData.append("image", roomData.image)
 
-    const res = await api.put(`/api/rooms/update/${roomId}`, formData)
+    const res = await apiTicketPrice.put(`/api/rooms/update/${roomId}`, formData)
     return res
 }
 
 /** This function get room By Id*/
 export async function getRoomById(roomId) {
     try {
-        const result = await api.get(`/api/rooms/room/${roomId}`)
+        const result = await apiTicketPrice.get(`/api/rooms/room/${roomId}`)
         return result.data
     } catch (error) {
         throw new Error(`Error fetching room ${error.message}`)

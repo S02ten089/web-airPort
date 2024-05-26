@@ -14,7 +14,7 @@ export const Home = () => {
   return (
     <section>
       {message && <p className='text-warning text-center'>{message}</p>}
-      {currentUser && <h6 className='text-success text-center'>You are logged in as {currentUser}</h6>}
+      {currentUser && <h6 className='text-success text-center'>Chúc Mừng Bạn Đăng Nhập Với Tên:  {currentUser}</h6>}
         <Header/>
         <section className='container'>
         <RoomSearch/>

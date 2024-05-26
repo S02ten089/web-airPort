@@ -44,7 +44,7 @@ export const RoomCarousel = () => {
                                             </Link>
                                             <CardBody>
                                                 <CardTitle className='hotel-color'>{room.roomType}</CardTitle>
-                                                <CardTitle className='room-price'>${room.roomPrice} / night</CardTitle>
+                                                <CardTitle className='room-price'>${room.roomPrice} / Flight</CardTitle>
                                                 <div className='flex-shrink-0 mt-3'>
                                                     <Link to={`/book-room/${room.id}`} className='btn btn-hotel btn-sm'>
                                                         Book Now

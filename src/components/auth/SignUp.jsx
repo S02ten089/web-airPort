@@ -21,7 +21,7 @@ export const SignUp = () => {
         e.preventDefault()
         try {
             const result = await signUp(register)
-            setSuccessMessage(result)
+            // setSuccessMessage(result)
             setErrorMessage("")
             setRegister({ firstName: "", lastName: "", email: "", password: "" })
         } catch (error) {

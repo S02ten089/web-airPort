@@ -15,8 +15,8 @@ export const RoomCard = ({room}) => {
                 </div>
                 <div className='flex-grow-1 ml-3 px-5'>
                     <CardTitle className='hotel-color'>{room.roomType}</CardTitle>
-                    <CardTitle className='room-price'>${room.roomPrice} / night</CardTitle>
-                    <CardText>Hotel is part of Booking Holdings Inc., the world leader in online travel & related services.</CardText>
+                    <CardTitle className='room-price'>${room.roomPrice} / Flight</CardTitle>
+                    <CardText>Flight is part of Booking Holdings Inc., the world leader in online travel & related services.</CardText>
                 </div>
                 <div className='flex-shrink-0 mt-3'>
                     <Link to={`/book-room/${room.id}`} className='btn btn-hotel btn-sm'>

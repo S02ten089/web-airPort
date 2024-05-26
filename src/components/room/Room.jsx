@@ -47,7 +47,7 @@ export const Room = () => {
     return (
         <Container>
             <h1 className='text-center'>Find your next stay</h1> 
-            <h4 className='text-center'>Search low prices on hotels, homes and much more...</h4><br />
+            <h4 className='text-center'>Search low prices on Flight, homes and much more...</h4><br />
             <Row>
                 <Col md={6} className='mb-3 mb-md-0'>
                     <RoomFilter data={data} setFilterData={setFilteredData} />

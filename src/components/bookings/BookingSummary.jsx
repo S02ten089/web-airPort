@@ -53,7 +53,7 @@ export const BookingSummary = ({ booking, payment, isFormValid, onConfirm }) => 
             <p>Email: <strong>{booking.guestEmail}</strong></p>
             <p>Check-in: <strong>{moment(booking.checkIn).format("MMM Do YYYY")}</strong> From 15:00</p>
             <p>Check-out: <strong>{moment(booking.checkOut).format("MMM Do YYYY")}</strong> Until 12:00</p>
-            <p>Reservation: 1 room, <strong>{numOfDays}</strong> night</p>
+            <p>Reservation: 1 room, <strong>{numOfDays}</strong> Flight</p>
             <div>
                 <legend>Number of Guests</legend>
                 <strong>Adult{booking.numOfAdults > 1 ? "s" : ""} : {booking.numOfAdults}</strong> &nbsp;&nbsp;

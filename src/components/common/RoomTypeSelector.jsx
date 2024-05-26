@@ -6,11 +6,11 @@ export const RoomTypeSelector = ({ handleRoomInputChange, newRoom }) => {
     const [showRoomType, setShowRoomType] = useState(false);
     const [newRoomType, setNewRoomType] = useState("");
 
-    useEffect(() => {
-        getRoomType().then((data) => {
-            setRoomTypes(data)
-        })
-    }, [])
+    // useEffect(() => {
+    //     getRoomType().then((data) => {
+    //         setRoomTypes(data)
+    //     })
+    // }, [])
 
     const handleNewRoomChange = (e) => {
         setNewRoomType(e.target.value);

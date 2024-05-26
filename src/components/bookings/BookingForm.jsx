@@ -163,7 +163,7 @@ export const BookingForm = () => {
                                     </div>
                                 </fieldset>
                                 <div className='form-group mt-2 mb-2'>
-                                    <p>By proceeding with this booking, I agree to Hotel’s <a href="">Terms of Use and Private Police</a></p>
+                                    <p>By proceeding with this booking, I agree to Flight <a href="">Terms of Use and Private Police</a></p>
                                     <button type='submit' className='btn btn-danger'>NEXT:FINAL STEP</button>
                                 </div>
                             </Form>
